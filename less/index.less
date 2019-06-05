@@ -73,14 +73,16 @@ h2 {
 
 .flex-row {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
 }
 
-.flex-column {
+.mobileformat {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
+
+@body-format: arial, Verdana, sans-serif;
 
 .content-format {
 	margin: 10px;
@@ -95,18 +97,20 @@ h2 {
 	header {
 		width: 80%;
 		margin: 0 auto;
+		font-family: @body-format;
 
 		nav {
+			border: 1px solid black;
 			width: 100%;
 			margin: 0 auto;
-			border: 1px solid black;
 			.flex-row;
 
 			a {
+				border: 1px solid black;
 				padding: 20px;
 				text-decoration: none;
-				font-size: 1.6rem;
-				font: solid black;
+				font-size: 1rem;
+				font-family: @body-format;
 			}
 		}
 	}
@@ -120,7 +124,7 @@ address {
 .intro {
 	width: 90%;
 	margin: 20px auto;
-	padding: 10px;
+	font-family: @body-format;
 
 	.h2 {
 		.content-format;
@@ -135,30 +139,27 @@ address {
 	.flex-column;
 	width: 90%;
 	margin: 20px auto;
-	padding: 10px;
+	font-family: @body-format;
 
-.indy-content {
-	border: 1px solid black;
+	.indy-content {
 	width: 100%;
-	margin: 10px;
-	background: gray;
+	margin-bottom: 10px;
 
+		.h2 {
+			padding-top: 10px;
+			padding-left: 10px;
+		}
 
-	.h2 {
-		padding-top: 10px;
-		padding-left: 10px;
-	}
+		p {
+			padding-top: 10px;
+			padding-left: 10px;
+		}
 
-	p {
-		padding-top: 10px;
-		padding-left: 10px;
-	}
-
-	ul {
-		padding-top: 20px;
-		padding-left: 30px;
-		padding-bottom: 20px;
-	}
+		ul {
+			padding-top: 20px;
+			padding-left: 30px;
+			padding-bottom: 20px;
+		}
 }
 
 table {
@@ -166,15 +167,15 @@ table {
 	padding: 20px;
 
 	.column1 {
-		width: 75%;
+		width: 50%;
 	}
 
 	.column2 {
-		width: 12.5%;
+		width: 25%;
 	}
 
 	.column3 {
-		width: 12.5%;
+		width: 25%;
 	}
 }
 
@@ -191,6 +192,4 @@ th, td {
 	.role-description {
 		text-align: center;
 	}
-}
-
-
+}}

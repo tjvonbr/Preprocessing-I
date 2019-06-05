@@ -148,7 +148,7 @@ h2 {
 }
 .flex-row {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .flex-column {
   display: flex;
@@ -167,29 +167,30 @@ h2 {
 .main-container header {
   width: 80%;
   margin: 0 auto;
+  font-family: arial, Verdana, sans-serif;
 }
 .main-container header nav {
+  border: 1px solid black;
   width: 100%;
   margin: 0 auto;
-  border: 1px solid black;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .main-container header nav a {
   padding: 20px;
   text-decoration: none;
-  font-size: 1.6rem;
-  font: solid black;
+  font-size: 1rem;
+  font-family: arial, Verdana, sans-serif;
 }
 address {
   margin: 20px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .intro {
   width: 90%;
   margin: 20px auto;
-  padding: 10px;
+  font-family: arial, Verdana, sans-serif;
 }
 .intro .h2 {
   margin: 10px;
@@ -203,49 +204,48 @@ address {
   justify-content: center;
   width: 90%;
   margin: 20px auto;
-  padding: 10px;
+  font-family: arial, Verdana, sans-serif;
 }
 .bottom-content .indy-content {
-  border: 1px solid black;
   width: 100%;
-  margin: 0 auto;
+  margin-bottom: 10px;
 }
-.bottom-content .h2 {
+.bottom-content .indy-content .h2 {
   padding-top: 10px;
   padding-left: 10px;
 }
-.bottom-content p {
+.bottom-content .indy-content p {
   padding-top: 10px;
   padding-left: 10px;
 }
-.bottom-content ul {
+.bottom-content .indy-content ul {
   padding-top: 20px;
   padding-left: 30px;
   padding-bottom: 20px;
 }
-table {
+.bottom-content table {
   width: 100%;
   padding: 20px;
 }
-table .column1 {
-  width: 75%;
+.bottom-content table .column1 {
+  width: 50%;
 }
-table .column2 {
-  width: 12.5%;
+.bottom-content table .column2 {
+  width: 25%;
 }
-table .column3 {
-  width: 12.5%;
+.bottom-content table .column3 {
+  width: 25%;
 }
-th {
+.bottom-content th {
   text-transform: uppercase;
   font-weight: bold;
 }
-th,
-td {
+.bottom-content th,
+.bottom-content td {
   padding: 10px;
   text-align: left;
 }
-th .role-description,
-td .role-description {
+.bottom-content th .role-description,
+.bottom-content td .role-description {
   text-align: center;
 }
