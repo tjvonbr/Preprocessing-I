@@ -201,22 +201,51 @@ address {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.indy-content {
-  border: 1px solid black;
   width: 90%;
-  margin: 10px auto;
+  margin: 20px auto;
+  padding: 10px;
 }
-.indy-content .h2 {
+.bottom-content .indy-content {
+  border: 1px solid black;
+  width: 100%;
+  margin: 0 auto;
+}
+.bottom-content .h2 {
   padding-top: 10px;
   padding-left: 10px;
 }
-.indy-content p {
+.bottom-content p {
   padding-top: 10px;
   padding-left: 10px;
 }
-.indy-content ul {
+.bottom-content ul {
   padding-top: 20px;
   padding-left: 30px;
   padding-bottom: 20px;
+}
+table {
+  width: 100%;
+  padding: 20px;
+}
+table .column1 {
+  width: 75%;
+}
+table .column2 {
+  width: 12.5%;
+}
+table .column3 {
+  width: 12.5%;
+}
+th {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+th .role-description,
+td .role-description {
+  text-align: center;
 }

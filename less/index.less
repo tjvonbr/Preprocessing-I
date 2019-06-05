@@ -133,12 +133,16 @@ address {
 
 .bottom-content {
 	.flex-column;
-}
+	width: 90%;
+	margin: 20px auto;
+	padding: 10px;
 
 .indy-content {
 	border: 1px solid black;
-	width: 90%;
-	margin: 10px auto;
+	width: 100%;
+	margin: 10px;
+	background: gray;
+
 
 	.h2 {
 		padding-top: 10px;
@@ -154,7 +158,38 @@ address {
 		padding-top: 20px;
 		padding-left: 30px;
 		padding-bottom: 20px;
-		
+	}
+}
+
+table {
+	width: 100%;
+	padding: 20px;
+
+	.column1 {
+		width: 75%;
+	}
+
+	.column2 {
+		width: 12.5%;
+	}
+
+	.column3 {
+		width: 12.5%;
+	}
+}
+
+th {
+	text-transform: uppercase;
+	font-weight: bold;
+
+}
+
+th, td {
+	padding: 10px;
+	text-align: left;
+
+	.role-description {
+		text-align: center;
 	}
 }
 
