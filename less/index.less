@@ -33,7 +33,7 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: none;
+	list-style: disc;
 }
 blockquote, q {
 	quotes: none;
@@ -64,9 +64,26 @@ h1 {
 	text-align: center;
 }
 
+h2 {
+	font-size: 1.3rem;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
 .flex-row {
 	display: flex;
 	justify-content: space-evenly;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.content-format {
+	margin: 10px;
 }
 
 .main-container {
@@ -100,6 +117,45 @@ address {
 	.flex-row;
 }
 
+.intro {
+	width: 90%;
+	margin: 20px auto;
+	padding: 10px;
 
+	.h2 {
+		.content-format;
+	}
+
+	p {
+		.content-format;
+	}
+}
+
+.bottom-content {
+	.flex-column;
+}
+
+.indy-content {
+	border: 1px solid black;
+	width: 90%;
+	margin: 10px auto;
+
+	.h2 {
+		padding-top: 10px;
+		padding-left: 10px;
+	}
+
+	p {
+		padding-top: 10px;
+		padding-left: 10px;
+	}
+
+	ul {
+		padding-top: 20px;
+		padding-left: 30px;
+		padding-bottom: 20px;
+		
+	}
+}
 
 

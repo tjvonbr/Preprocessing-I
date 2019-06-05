@@ -109,7 +109,7 @@ body {
 }
 ol,
 ul {
-  list-style: none;
+  list-style: disc;
 }
 blockquote,
 q {
@@ -140,9 +140,23 @@ h1 {
   font-weight: bold;
   text-align: center;
 }
+h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-left: 10px;
+}
 .flex-row {
   display: flex;
   justify-content: space-evenly;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content-format {
+  margin: 10px;
 }
 .main-container {
   width: 800px;
@@ -171,4 +185,38 @@ address {
   margin: 20px;
   display: flex;
   justify-content: space-evenly;
+}
+.intro {
+  width: 90%;
+  margin: 20px auto;
+  padding: 10px;
+}
+.intro .h2 {
+  margin: 10px;
+}
+.intro p {
+  margin: 10px;
+}
+.bottom-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.indy-content {
+  border: 1px solid black;
+  width: 90%;
+  margin: 10px auto;
+}
+.indy-content .h2 {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.indy-content p {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.indy-content ul {
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-bottom: 20px;
 }
